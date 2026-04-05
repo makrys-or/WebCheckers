@@ -7,7 +7,7 @@ namespace Checkers0._1.Components.Pages
         private Cell? selectedCell;
         private readonly Logic logic = new();
         string act = "";
-        public string Turn => logic.Turn.ToString();
+        public PieceColor Turn => logic.Turn;
 
         private void HandleClick(Cell cell)
         {
