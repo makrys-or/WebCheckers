@@ -4,7 +4,7 @@
 <PageTitle>Checkers</PageTitle>
 
 <section class='hero'>
-    <div class="board">
+    <div class="board" style='transform: @(Turn == PieceColor.Black ? "rotate(180deg)" : "");'>
         @for (int r = 8; r >= 1; r--)
         {
             for (int c = 1; c <= 8; c++)
