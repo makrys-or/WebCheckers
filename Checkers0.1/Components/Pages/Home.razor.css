@@ -1,13 +1,27 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .board {
     display: flex;
     flex-wrap: wrap; 
-    width: 700px; 
-    height: 700px;
+    width: 500px; 
+    height: 500px;
     border: 3px solid black;
+    transition: 2s all
+}
+
+.board:hover {
+    transform: rotate(180deg);
 }
 
 .cell {
@@ -27,6 +41,7 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
-
 }
+
+
 
